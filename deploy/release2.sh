@@ -28,6 +28,8 @@ done
 
 su deploy
 
+sudo chown -R deploy:deploy .
+
 # Function to execute commands inside Docker container
 run_in_docker() {
     docker exec -u root -it laravel_application bash -c "$1"
