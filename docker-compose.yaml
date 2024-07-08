@@ -41,7 +41,10 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - ./storage/dbdata:/docker-entrypoint-initdb.d
+      # - ./storage/dbdata:/docker-entrypoint-initdb.d
+      - ${MYSQL_INITDB_DIR-./deploy/docker/config/initdb}:/docker-entrypoint-initdb.d
+      - ${MYSQL_DATA_DIR-./deploy/docker/data/mysql}:/var/lib/mysql
+      - ${MYSQL_LOG_DIR-./deploy/docker/logs/mysql}:/var/log/mysql
     networks:
       - internal
 
