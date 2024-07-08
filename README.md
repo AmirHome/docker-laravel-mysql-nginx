@@ -30,6 +30,8 @@ To interact with the container, use the following command:
 
 ```bash
 docker exec -it laravel_application bash
+docker exec -u root -it laravel_application bash -c "chmod -R 777 /var/www/bootstrap/cache"
+docker exec -u root -it laravel_application bash -c "chmod -R 777 /var/www/storage"
 ```
 <br>
 <br>
