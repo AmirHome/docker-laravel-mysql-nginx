@@ -29,6 +29,8 @@ This is a simple Docker configuration for running Laravel applications with Ngin
 To interact with the container, use the following command:
 
 ```bash
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
 docker exec -it laravel_application bash
 docker exec -u root -it laravel_application bash -c "chmod -R 777 /var/www/bootstrap/cache"
 docker exec -u root -it laravel_application bash -c "chmod -R 777 /var/www/storage"
