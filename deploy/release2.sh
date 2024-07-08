@@ -26,7 +26,6 @@ for args in "$@"; do
   esac
 done
 
-su deploy
 
 sudo chown -R deploy:deploy .
 
