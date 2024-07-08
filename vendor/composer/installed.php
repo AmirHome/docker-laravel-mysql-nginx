@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'd0a31c595f17a89ea21f4a50f174b83d97844951',
+        'reference' => 'f4e3a5f0afcdf208bc315b2e983d0a1bd3820cc8',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(
@@ -420,7 +420,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'd0a31c595f17a89ea21f4a50f174b83d97844951',
+            'reference' => 'f4e3a5f0afcdf208bc315b2e983d0a1bd3820cc8',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(
@@ -768,9 +768,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '10.5.25',
-            'version' => '10.5.25.0',
-            'reference' => '831bf82312be6037e811833ddbea0b8de60ea314',
+            'pretty_version' => '10.5.26',
+            'version' => '10.5.26.0',
+            'reference' => '42e2f13ceaa2e34461bc89bea75407550b40b2aa',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
