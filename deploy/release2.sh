@@ -79,12 +79,6 @@ function deployment() {
       echo "\n Database migrated.\n\n\n"
     fi
 
-  else
-
-    # if set argument update -u or --update, update composer
-    # if [ "$1" == "-u" ] || [ "$1" == "--update" ]; then
-    # composer update
-    # fi
   fi
 
 
