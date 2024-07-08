@@ -73,8 +73,8 @@ function deployment() {
 
   if [ "$DOCKER" ]; then
     
-    docker exec -u root -it laravel_application bash -c "chmod -R 777 /var/www/bootstrap/cache"
-    docker exec -u root -it laravel_application bash -c "chmod -R 777 /var/www/storage"
+    run_in_docker "chmod -R 777 /var/www/bootstrap/cache"
+    run_in_docker "chmod -R 777 /var/www/storage"
 
     if [ "$MIGRATESEED" ]; then
       run_in_docker "php artisan migrate:fresh --seed"
