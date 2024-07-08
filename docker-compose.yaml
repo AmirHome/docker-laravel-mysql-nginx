@@ -16,6 +16,9 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+      args:
+        user: deploy
+        uid: 1000
     image: application_img
     container_name: laravel_application
     restart: unless-stopped
